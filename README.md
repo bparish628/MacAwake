@@ -1,6 +1,6 @@
 # MacAwake
 
-A menu bar app that keeps your Mac awake, in the style of Caffeinated.
+A menu bar app that keeps your Mac awake.
 
 Click the cup in the menu bar to toggle it on. Choose how long it stays on: indefinitely, 15, 30, or 45 minutes, or 1, 4, 8, or 12 hours. When the time runs out it turns itself off.
 
@@ -18,3 +18,7 @@ scripts/build.sh --install  # also copies it to /Applications and launches it
 ## How it works
 
 While on, MacAwake holds an IOKit power assertion, the same mechanism `caffeinate` uses. With "Keep display on" enabled (the default) it prevents display sleep. Disabled, it only prevents idle system sleep. Run `pmset -g assertions` to see it.
+
+## License
+
+MIT. See [LICENSE](LICENSE).

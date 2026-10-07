@@ -9,11 +9,11 @@ struct MenuPanel: View {
         VStack(alignment: .leading, spacing: 0) {
             HStack {
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Caffeinated").font(.headline)
+                    Text("Stay awake").font(.headline)
                     StatusLine(state: controller.state)
                 }
                 Spacer()
-                Toggle("Caffeinated", isOn: Binding(get: { controller.isOn }, set: controller.setOn))
+                Toggle("Stay awake", isOn: Binding(get: { controller.isOn }, set: controller.setOn))
                     .toggleStyle(.switch)
                     .labelsHidden()
             }
